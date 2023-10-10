@@ -14,11 +14,12 @@ class Game extends Key {
       console.log(`${index + 1} - ${move}`);
     });
     console.log('0 - Exit');
-    console.log('Type the number of your move:');
+    console.log('? - help')
+    console.log('Enter your move:');
   }
 
   play(userChoice) {
-    if (isNaN(userChoice) || userChoice < 0 || userChoice > this.moves.length) {
+    if ((isNaN(userChoice)) || userChoice < 0 || userChoice >= this.moves.length) {
       console.log('Invalid input. Please select a valid move.');
       return;
     }
