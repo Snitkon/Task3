@@ -5,7 +5,7 @@ const Help = require('./tables');
 
 const moves = process.argv.slice(2);
 if (moves.length < 3 || moves.length % 2 === 0 || new Set(moves).size !== moves.length) {
-  console.log('Error: Please provide an odd number of unique moves (>= 3) as command-line arguments.');
+  console.error('Error: Please provide an odd number of unique moves (>= 3) as command-line arguments.');
 } else {
   const game = new Game(moves);
   const table = new Help(moves)
