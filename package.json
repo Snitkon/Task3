@@ -1,0 +1,16 @@
+{
+  "name": "game",
+  "version": "1.0.0",
+  "description": "game rock-paper-scissors",
+  "main": "start.js",
+  "type": "commonjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "cli-table": "^0.3.11"
+  }
+}
